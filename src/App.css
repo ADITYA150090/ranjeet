@@ -1,0 +1,61 @@
+.page { position: relative; }
+
+/* Shared utility */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 720px) {
+  .container { padding: 0 20px; }
+}
+
+/* eyebrow default (for white bg) */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(10,10,12,0.07);
+  color: var(--ink);
+  border: 1px solid rgba(10,10,12,0.1);
+  margin-bottom: 0;
+}
+
+/* h-section shared */
+.h-section {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.h-section em { font-style: italic; }
+
+/* cta-btn shared */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: var(--orange);
+  color: #fff;
+  transition: background 0.2s, transform 0.15s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-btn:hover { background: #d44810; transform: translateY(-1px); }

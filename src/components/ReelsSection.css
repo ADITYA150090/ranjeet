@@ -1,0 +1,326 @@
+.region-white {
+    position: relative;
+    z-index: 2;
+    background: white;
+    min-height: 100vh;
+    border-radius: 32px 32px 0 0;
+}
+
+.section-pad {
+    padding: 100px 0;
+}
+
+.eyebrow-dark {
+    background: rgba(10, 10, 12, 0.07) !important;
+    color: var(--ink) !important;
+    border: 1px solid rgba(10, 10, 12, 0.1) !important;
+}
+
+.h-section {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--ink);
+}
+
+.h-section em {
+    font-style: italic;
+}
+
+.what-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+}
+
+.what-mission {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--muted);
+    padding-top: 50px;
+    max-width: 420px;
+}
+
+.reels-viewport {
+    /* overflow: hidden; */
+    position: relative;
+    margin: 0 -40px;
+    padding: 0 40px;
+}
+
+.reels-rail {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 4px;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none;
+}
+
+.reels-rail::-webkit-scrollbar {
+    display: none;
+}
+
+.reels-rail:active {
+    cursor: grabbing;
+}
+
+.reel-card {
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reel-frame {
+    position: relative;
+    display: block;
+    aspect-ratio: 9/16;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #111;
+}
+
+.reel-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reel-shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+.reel-progress {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    z-index: 4;
+}
+
+.reel-progress span {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.reel-top {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+.reel-top-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+
+.reel-top-cam {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reel-side {
+    position: absolute;
+    right: 8px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    z-index: 4;
+}
+
+.reel-act {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reel-act svg {
+    width: 22px;
+    height: 22px;
+}
+
+.reel-act small {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.reel-audio-disc {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #333 40%, #555);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-top: 4px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.reel-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    right: 48px;
+    z-index: 4;
+}
+
+.reel-user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.reel-avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--orange), #ff9a3c);
+    border: 1.5px solid #fff;
+    flex-shrink: 0;
+}
+
+.reel-handle {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.reel-follow {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reel-text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 5px;
+    line-height: 1.4;
+}
+
+.reel-audio {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reel-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.reel-platform {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+.reel-views {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-soft);
+}
+
+.reels-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    color: #111;
+}
+
+.reels-stats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.reels-stats strong {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.dot-sep {
+    color: var(--muted-2);
+}
+
+.cta-btn-dark {
+    background: var(--ink) !important;
+    color: #fff !important;
+}
+
+.cta-btn-dark:hover {
+    background: #2a2a2e !important;
+}
+
+@media (max-width: 768px) {
+    .section-pad {
+        padding: 60px 0;
+    }
+    .what-header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .what-mission {
+        padding-top: 0;
+    }
+    .reels-viewport {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+    .reels-footer {
+        color: #111;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .reels-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

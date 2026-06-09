@@ -1,0 +1,105 @@
+.region-partners {
+  position: relative;
+  background: rgb(10,10,12);
+  z-index: 2;
+}
+
+.partners-wall {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  padding: 64px;
+  background: linear-gradient(135deg, rgb(16,16,20) 0%, rgb(10,10,14) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.partners-wall-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.partners-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.partners-glow-1 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(232,85,26,0.6), transparent 70%);
+  top: -100px; right: -100px;
+}
+
+.partners-glow-2 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(80,110,200,0.4), transparent 70%);
+  bottom: -80px; left: -80px;
+}
+
+.partners-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 60px);
+}
+
+.partners-wall-inner { position: relative; z-index: 2; }
+
+.partners-header { margin-bottom: 48px; }
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.partner-tile {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2/1;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  animation: revealTile 0.4s ease both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@keyframes revealTile {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.partner-tile:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+.partner-tile img {
+  max-width: 100%;
+  max-height: 36px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.partner-tile:hover img { opacity: 1; }
+
+.partner-tile-more {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.05em;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .partners-wall { padding: 32px 20px; border-radius: 20px; }
+  .partner-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 6px; }
+}

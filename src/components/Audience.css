@@ -1,0 +1,82 @@
+.aud-region-dark {
+  background: rgb(10,10,12) !important;
+}
+
+.aud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.platforms-pill {
+  display: inline-flex;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.55);
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+.aud-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.aud-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.aud-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aud-card:nth-child(1) { transition-delay: 0ms; }
+.aud-card:nth-child(2) { transition-delay: 100ms; }
+.aud-card:nth-child(3) { transition-delay: 200ms; }
+.aud-card:nth-child(4) { transition-delay: 300ms; }
+
+.big {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.aud-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .aud-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .aud-grid { grid-template-columns: 1fr; }
+  .platforms-pill { display: none; }
+}

@@ -1,0 +1,227 @@
+.region-footer-white {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-section {
+    padding: 100px 0 48px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.footer-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.dot-orange {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--orange);
+    display: inline-block;
+}
+
+.footer-display {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 0 0 16px;
+}
+
+.footer-display em {
+    font-style: italic;
+    color: var(--orange);
+}
+
+.footer-tag {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 28px;
+    max-width: 340px;
+}
+
+.footer-subscribe {
+    display: flex;
+    gap: 0;
+    background: rgba(10, 10, 12, 0.06);
+    border: 1px solid rgba(10, 10, 12, 0.1);
+    border-radius: 999px;
+    padding: 4px;
+    max-width: 360px;
+}
+
+.footer-subscribe input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 16px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--ink);
+}
+
+.footer-subscribe input::placeholder {
+    color: var(--muted-2);
+}
+
+.footer-subscribe button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.footer-subscribe button:hover {
+    background: #2a2a2e;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 8px;
+}
+
+.col-head {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    margin-bottom: 18px;
+}
+
+.footer-cols ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-cols li {
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+
+.footer-cols a {
+    color: var(--ink-soft);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-cols a:hover {
+    color: var(--orange);
+}
+
+.footer-cols a span {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.footer-stamp {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(4rem, 12vw, 10rem);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: black;
+    -webkit-text-stroke: 1.5px rgba(10, 10, 12, 0.12);
+    line-height: 1;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 24px 0 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 0;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted-2);
+}
+
+.meta-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.plus {
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.meta-mid {
+    display: flex;
+    gap: 8px;
+}
+
+.sep {
+    opacity: 0.5;
+}
+
+.meta-right a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--muted);
+    transition: color 0.2s;
+}
+
+.meta-right a:hover {
+    color: var(--orange);
+}
+
+@media (max-width: 900px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-cols {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
