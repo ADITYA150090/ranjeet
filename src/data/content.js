@@ -42,12 +42,12 @@ export const reels = videos.map((video, index) => ({
 }));
 export const partners = [{
         name: "RunwayML",
-        href: "https://runwayml.com",
+        href: "",
         img: logo1,
     },
     {
         name: "Kling AI",
-        href: "https://www.klingai.com",
+        href: "",
         img: logo2,
     },
     {
@@ -57,27 +57,27 @@ export const partners = [{
     },
     {
         name: "Midjourney",
-        href: "https://www.midjourney.com",
+        href: "",
         img: logo4,
     },
     {
         name: "HeyGen",
-        href: "https://www.heygen.com",
+        href: "",
         img: logo5,
     },
     {
         name: "ElevenLabs",
-        href: "https://elevenlabs.io",
+        href: "",
         img: logo6,
     },
     {
         name: "Adobe Premiere Pro",
-        href: "https://www.adobe.com",
+        href: "",
         img: logo7,
     },
     {
         name: "After Effects",
-        href: "https://www.adobe.com",
+        href: "",
         img: logo8,
     },
     // {

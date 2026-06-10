@@ -23,7 +23,7 @@ export default function Navbar() {
         <span className="brand-spacer" aria-hidden="true" />
         <div className="nav-pill" role="navigation">
           <a href="#work">Reels</a>
-          <a href="#topics">Partners</a>
+          <a href="#topics">Tools</a>
           <a href="#about">About</a>
           <a href="https://calendly.com/hypervail/30min" target="_blank" rel="noopener" className="active">Book a Call</a>
         </div>

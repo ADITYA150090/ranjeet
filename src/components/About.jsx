@@ -9,9 +9,9 @@ export default function About() {
           <div className="about-header">
             <span className="eyebrow eyebrow-dark">ABOUT</span>
             <h2 className="h-section" style={{ marginTop: 20 }}>
-              A <em><span style={{ color: '#e8551a' }}>one-person</span></em><br />
-              studio helping you turn<br />
-              AI into real output
+              <em><span style={{ color: '#e8551a' }}>AI is the tool</span></em><br />
+              Storytelling is the craft<br />
+              <em><span style={{ color: '#e8551a' }}>I do both</span></em>
             </h2>
           </div>
           <div className="about-grid">
@@ -30,7 +30,14 @@ export default function About() {
 
             <div className="about-right">
               <div className="about-card">
-                <p>ranjeet tekam is the AI educator behind one of the fastest-growing AI channels online, reaching over half a million followers across four platforms. Trained as a data scientist, he spent years shipping AI systems at PwC and L'Oréal before turning the camera on his own work. Today, he helps creators, founders, and brands cut through the noise of new AI tools and find what actually helps them build, ship, and grow.</p>
+                <p>I'm Ranjeet  an AI content creator and video editor based in India, working with brands and creators around the world.
+
+I sit at the intersection of generative AI and traditional post-production. That means I can take a concept from raw idea to finished video using tools like RunwayML, Kling, Higgsfield, and Midjourney then polish it in Premiere Pro and After Effects until it actually feels premium.
+
+I've produced 360+ pieces of content AI ads, product visualizations, long-form videos, and short-form reels and I lead AI content adoption at my company, helping a growing business stay ahead as the space evolves.
+
+If you want video that's fast to produce, fresh in style, and built for attention, you're in the right place.
+</p>
               </div>
               <div className="about-quad">
                 <div className="cell"><div className="lab">CHANNEL</div><div className="val">@ranx.ai</div></div>

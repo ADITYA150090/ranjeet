@@ -2,11 +2,11 @@ import './Marquee.css';
 
 export default function Marquee() {
   const items = [
-    { text: 'DAILY VIDEO ON AI', em: 'since 2020' },
-    { text: '475K+ AI LEARNERS' },
-    { text: 'EMERGENT · KLING AI · MANUS AI', em: 'partners' },
-    { text: 'AI FOR FOUNDERS & CREATORS' },
-    { text: 'NEW AI TOOL DROPS —', em: 'NEW VIDEO SHARED' },
+    { text: 'AI Ad · Kling', em: 'Premiere Pro' },
+    // { text: '475K+ AI LEARNERS' },
+    { text: 'Product Visual · Higgsfield', em: 'Magnific' },
+    { text: 'Short-form Reel · RunwayML' },
+    // { text: 'NEW AI TOOL DROPS —', em: 'NEW VIDEO SHARED' },
   ];
 
   return (
