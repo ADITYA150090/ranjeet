@@ -50,8 +50,8 @@ const handleSubmit = async (e) => {
               <h2 className="footer-display">
                 Build with <em>AI</em>,<br />ship every <em>week.</em>
               </h2>
-              <p className="footer-tag">Subscribe for one practical AI tutorial in your inbox each week.</p>
-              <form className="footer-subscribe" onSubmit={handleSubmit}>
+              {/* <p className="footer-tag">Subscribe for one practical AI tutorial in your inbox each week.</p> */}
+              {/* <form className="footer-subscribe" onSubmit={handleSubmit}>
                 <input
                   type="email"
                   placeholder="you@email.com"
@@ -69,7 +69,7 @@ const handleSubmit = async (e) => {
                     </svg>
                   </span>
                 </button>
-              </form>
+              </form> */}
               {success && (
   <div className="success-toast">
     ✓ Thanks for subscribing. Check your inbox.

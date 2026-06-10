@@ -24,8 +24,8 @@ export default function Partners() {
                   <a
                     key={i}
                     className="partner-tile"
-                    href={p.href}
-                    target="_blank"
+                   
+                   
                     rel="noopener"
                     style={{ '--reveal-delay': `${i * 40}ms` }}
                   >
