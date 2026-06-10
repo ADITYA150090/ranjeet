@@ -2,10 +2,10 @@ import './Marquee.css';
 
 export default function Marquee() {
   const items = [
-    { text: 'AI Ad · Kling', em: 'Premiere Pro' },
-    // { text: '475K+ AI LEARNERS' },
-    { text: 'Product Visual · Higgsfield', em: 'Magnific' },
-    { text: 'Short-form Reel · RunwayML' },
+    { text: 'LETS MAKE SOMETHING THAT GETS NOTICED' },
+     { text: 'START A PROJECT' },
+    { text: ' REPLY WITHIN 24 HOURS ' },
+    { text: 'AVAILABLE FOR BRANDS & AGENCIES' },
     // { text: 'NEW AI TOOL DROPS —', em: 'NEW VIDEO SHARED' },
   ];
 
