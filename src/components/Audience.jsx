@@ -33,7 +33,7 @@ export default function Audience() {
             <div>
               <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.65)' }}>MY AUDIENCE</span>
               <h2 className="h-section" style={{ marginTop: 22, color: '#fff' }}>
-                475k+ people discover<br />AI with me<br />across <em><span style={{ color: '#e8551a' }}>4 platforms</span></em>
+               Explore<br />AI with<em><span style={{ color: '#e8551a' }}>me</span></em>
               </h2>
             </div>
             <span className="platforms-pill">INSTAGRAM · FACEBOOK · LINKEDIN · THREADS</span>
