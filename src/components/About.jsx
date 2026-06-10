@@ -41,7 +41,7 @@ If you want video that's fast to produce, fresh in style, and built for attentio
               </div>
               <div className="about-quad">
                 <div className="cell"><div className="lab">CHANNEL</div><div className="val">@ranx.ai</div></div>
-                <div className="cell"><div className="lab">BASED</div><div className="val">Madhya Pradesh, India</div></div>
+                <div className="cell"><div className="lab">BASED</div><div className="val"> India</div></div>
                 <div className="cell"><div className="lab">PREVIOUSLY</div><div className="val">Video Editor</div></div>
                 <div className="cell"><div className="lab">WORKED AT:</div><div className="val">Freelancer</div></div>
               </div>

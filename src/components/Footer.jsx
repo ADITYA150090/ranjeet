@@ -82,24 +82,22 @@ const handleSubmit = async (e) => {
                 <div className="col-head">Watch</div>
                 <ul>
                   <li><a href="https://www.instagram.com/ranx.ai/" target="_blank" rel="noopener">Instagram <span>↗</span></a></li>
-                  <li><a href="#">Facebook <span>↗</span></a></li>
-                  <li><a href="https://www.linkedin.com/in/arshmankhalid/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
-                  <li><a href="#">YouTube <span>↗</span></a></li>
+                  
+                  <li><a href="https://www.linkedin.com/in/ranjeet-tekam-447615197/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
+            
                 </ul>
               </div>
               <div>
-                <div className="col-head">Read</div>
+                
                 <ul>
-                  <li><a href="#">Threads <span>↗</span></a></li>
-                  <li><a href="#">X <span>↗</span></a></li>
-                  <li><a href="#">All links <span>↗</span></a></li>
+                  
                 </ul>
               </div>
               <div>
                 <div className="col-head">Contact</div>
                 <ul>
                   <li><a href="mailto:ranjeettekam18@gmail.com">ranjeettekam18@gmail.com</a></li>
-                  <li>madhya pradesh, India</li>
+                  <li> India</li>
                 </ul>
               </div>
             </div>
@@ -112,11 +110,7 @@ const handleSubmit = async (e) => {
               <span className="plus">+</span>
               <span>© 2026 ranjeet tekam. All rights reserved.</span>
             </div>
-            <div className="meta-mid">
-              <span>EST 2020 — 2026</span>
-              <span className="sep">·</span>
-              <span>v 1.0</span>
-            </div>
+           
             <div className="meta-right">
               <a href="#top">
                 Back to top

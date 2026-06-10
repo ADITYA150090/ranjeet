@@ -10,7 +10,7 @@ export default function Notes() {
               <span className="eyebrow">Why Work With Me</span>
               <h3>Fast Turnaround</h3>
               <p>AI lets me produce in days what used to take weeks  without cutting quality.</p>
-              <a className="cta-btn" href="" target="_blank" rel="noopener">
+              <a className="cta-btn" href="https://www.linkedin.com/in/ranjeet-tekam-447615197/" target="_blank" rel="noopener">
                 LinkedIn
                 <svg style={{ marginLeft: 6 }} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M7 17 17 7M9 7h8v8" />

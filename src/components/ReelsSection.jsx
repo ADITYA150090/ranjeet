@@ -131,13 +131,13 @@ export default function ReelsSection() {
           </div>
 
           <div className="reels-footer">
-            <div className="reels-stats">
+            {/* <div className="reels-stats">
               <span><strong>176</strong> AI tutorials shared</span>
               <span className="dot-sep">·</span>
               <span><strong>20M+</strong> views in Q1 of 2026</span>
               <span className="dot-sep">·</span>
               <span><strong>4</strong> platforms</span>
-            </div>
+            </div> */}
             <a className="cta-btn cta-btn-dark" href="https://www.instagram.com/ranx.ai/" target="_blank" rel="noopener">
               Watch all reels
             </a>
