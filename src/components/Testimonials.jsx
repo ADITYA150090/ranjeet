@@ -42,7 +42,7 @@ export default function Testimonials() {
                 <span className="tag">Tool walkthroughs</span>
                 <span className="tag">Launch campaigns</span>
               </div>
-              <a className="cta-btn cta-btn-dark" href="mailto:hello@ranx.aikhalid.com">
+              <a className="cta-btn cta-btn-dark" href="mailto:ranjeettekam18@gmail.com">
                 Pitch a partnership
                 <span className="arrow" style={{ background: 'rgba(255,255,255,0.15)' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">

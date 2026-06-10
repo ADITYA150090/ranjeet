@@ -44,6 +44,7 @@
     color: var(--muted);
     padding-top: 50px;
     max-width: 420px;
+    color: #111;
 }
 
 .reels-viewport {
@@ -277,7 +278,7 @@
     align-items: center;
     gap: 12px;
     font-size: 13px;
-    color: var(--muted);
+    color: black;
 }
 
 .reels-stats strong {
@@ -308,6 +309,7 @@
     }
     .what-mission {
         padding-top: 0;
+        color: #111;
     }
     .reels-viewport {
         margin: 0 -20px;

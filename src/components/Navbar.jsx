@@ -27,7 +27,7 @@ export default function Navbar() {
           <a href="#about">About</a>
           <a href="https://calendly.com/hypervail/30min" target="_blank" rel="noopener" className="active">Book a Call</a>
         </div>
-        <a className="subscribe" href="mailto:hello@ranx.aikhalid.com">
+        <a className="subscribe" href="mailto:ranjeettekam18@gmail.com">
           Work with me
           <span className="subscribe-arrow">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">

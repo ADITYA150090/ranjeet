@@ -7,6 +7,24 @@ import vid7 from "../assets/videos/vid7.mp4";
 import vid8 from "../assets/videos/vid8.mp4";
 import vid9 from "../assets/videos/vid9.mp4";
 import vid10 from "../assets/videos/vid10.mp4";
+
+
+import logo1 from "../assets/images/logos/logo1.png";
+import logo2 from "../assets/images/logos/logo2.png";
+import logo3 from "../assets/images/logos/logo3.png";
+import logo4 from "../assets/images/logos/logo4.jpeg";
+import logo5 from "../assets/images/logos/logo5.jpg";
+import logo6 from "../assets/images/logos/logo6.jpeg";
+import logo7 from "../assets/images/logos/logo7.png";
+import logo8 from "../assets/images/logos/logo8.jpeg";
+// import logo9 from "../assets/images/logos/logo9.jpeg";
+import logo10 from "../assets/images/logos/logo10.jpeg";
+import logo11 from "../assets/images/logos/logo11.png";
+import logo12 from "../assets/images/logos/logo12.png";
+import logo13 from "../assets/images/logos/logo13.png";
+import logo14 from "../assets/images/logos/logo14.png";
+
+
 const videos = [vid2, vid3, vid4, vid5, vid6, vid7, vid8, vid9, vid10];
 
 export const reels = videos.map((video, index) => ({
@@ -25,42 +43,72 @@ export const reels = videos.map((video, index) => ({
 export const partners = [{
         name: "RunwayML",
         href: "https://runwayml.com",
-        img: "/logos/runway.png"
+        img: logo1,
     },
     {
         name: "Kling AI",
         href: "https://www.klingai.com",
-        img: "/logos/kling.png"
+        img: logo2,
     },
     {
         name: "Higgsfield",
         href: "#",
-        img: ""
+        img: logo3,
     },
     {
         name: "Midjourney",
         href: "https://www.midjourney.com",
-        img: "/logos/midjourney.png"
+        img: logo4,
     },
     {
         name: "HeyGen",
         href: "https://www.heygen.com",
-        img: "/logos/heygen.png"
+        img: logo5,
     },
     {
         name: "ElevenLabs",
         href: "https://elevenlabs.io",
-        img: "/logos/elevenlabs.png"
+        img: logo6,
     },
     {
         name: "Adobe Premiere Pro",
         href: "https://www.adobe.com",
-        img: "/logos/premiere.png"
+        img: logo7,
     },
     {
         name: "After Effects",
         href: "https://www.adobe.com",
-        img: "/logos/aftereffects.png"
+        img: logo8,
+    },
+    // {
+    //     name: "Adobe",
+    //     href: "https://www.adobe.com",
+    //     img: logo9,
+    // },
+    {
+        name: "Luma AI",
+        href: "#",
+        img: logo10,
+    },
+    {
+        name: "Magnific AI",
+        href: "#",
+        img: logo11,
+    },
+    {
+        name: "ImagineArt",
+        href: "#",
+        img: logo12,
+    },
+    {
+        name: "InVideo AI",
+        href: "#",
+        img: logo13,
+    },
+    {
+        name: "OpenCreator",
+        href: "#",
+        img: logo14,
     }
 ];
 

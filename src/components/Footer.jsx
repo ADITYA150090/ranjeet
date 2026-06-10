@@ -2,13 +2,41 @@ import { useState } from 'react';
 import './Footer.css';
 
 export default function Footer() {
-  const [email, setEmail] = useState('');
+  
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thanks! We'll be in touch at ${email}`);
+  const [email, setEmail] = useState('');
+const [success, setSuccess] = useState(false);
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+
+  const response = await fetch(
+     "https://formspree.io/f/mkoablrj",
+    
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email
+      })
+    }
+  );
+
+  if(response.ok){
+    setSuccess(true);
     setEmail('');
-  };
+  }
+
+  
+
+  setTimeout(() => {
+    setSuccess(false);
+  }, 4000);
+};
+
 
   return (
     <div className="region-footer-white">
@@ -32,6 +60,7 @@ export default function Footer() {
                   onChange={e => setEmail(e.target.value)}
                   required
                 />
+
                 <button type="submit">
                   Subscribe
                   <span className="arrow" style={{ background: 'var(--orange)', color: '#fff' }}>
@@ -41,6 +70,11 @@ export default function Footer() {
                   </span>
                 </button>
               </form>
+              {success && (
+  <div className="success-toast">
+    ✓ Thanks for subscribing. Check your inbox.
+  </div>
+)}
             </div>
 
             <div className="footer-cols">
@@ -64,7 +98,7 @@ export default function Footer() {
               <div>
                 <div className="col-head">Contact</div>
                 <ul>
-                  <li><a href="mailto:hello@ranx.aikhalid.com">hello@ranx.aikhalid.com</a></li>
+                  <li><a href="mailto:ranjeettekam18@gmail.com">ranjeettekam18@gmail.com</a></li>
                   <li>madhya pradesh, India</li>
                 </ul>
               </div>
