@@ -49,7 +49,7 @@ function ReelCard({ reel }) {
           <span className="reel-top-cam">⬤</span>
         </div>
         <div className="reel-side">
-          <button className="reel-act reel-act-like" type="button" aria-label="Like">
+          {/* <button className="reel-act reel-act-like" type="button" aria-label="Like">
             <HeartIcon /><small>{reel.likes}</small>
           </button>
           <button className="reel-act" type="button" aria-label="Comment">
@@ -60,8 +60,8 @@ function ReelCard({ reel }) {
           </button>
           <button className="reel-act reel-act-more" type="button" aria-label="More">
             <MoreIcon />
-          </button>
-          <span className="reel-audio-disc" aria-hidden="true" />
+          </button> */}
+          {/* <span className="reel-audio-disc" aria-hidden="true" /> */}
         </div>
         <div className="reel-caption">
           <div className="reel-user">
