@@ -89,6 +89,23 @@ export default function ReelsSection() {
   const [isDragging, setIsDragging] = useState(false);
   const dragStart = useRef({ x: 0, scrollLeft: 0 });
 
+  useEffect(() => {
+    const rail = railRef.current;
+    if (!rail) return;
+  
+    const interval = setInterval(() => {
+      if (isDragging) return;
+  
+      rail.scrollLeft += 1;
+  
+      if (rail.scrollLeft >= rail.scrollWidth - rail.clientWidth) {
+        rail.scrollLeft = 0;
+      }
+    }, 10);
+  
+    return () => clearInterval(interval);
+  }, [isDragging]);
+
   const onMouseDown = (e) => {
     setIsDragging(true);
     dragStart.current = { x: e.pageX - railRef.current.offsetLeft, scrollLeft: railRef.current.scrollLeft };
@@ -126,7 +143,9 @@ export default function ReelsSection() {
               onMouseUp={stopDrag}
               onMouseLeave={stopDrag}
             >
-              {reels.map(reel => <ReelCard key={reel.id} reel={reel} />)}
+             {[...reels, ...reels].map((reel, index) => (
+  <ReelCard key={index} reel={reel} />
+))}
             </div>
           </div>
 

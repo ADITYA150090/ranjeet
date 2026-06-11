@@ -7,7 +7,7 @@ import Partners from './components/Partners';
 import Steps from './components/Steps';
 import Notes from './components/Notes';
 import About from './components/About';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import Audience from './components/Audience';
 import Footer from './components/Footer';
 
@@ -23,7 +23,7 @@ function App() {
       <Steps />
       <Notes />
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Audience />
       <Footer />
     </div>

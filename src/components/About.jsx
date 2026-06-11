@@ -57,12 +57,12 @@ If you want video that's fast to produce, fresh in style, and built for attentio
                     <path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16M5 19a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                   </svg>
                 </a>
-                <a className="cta-btn" href="mailto:ranjeettekam18@gmail.com">
+                {/* <a className="cta-btn" href="mailto:ranjeettekam18@gmail.com">
                   Get in touch
                   <svg style={{ marginLeft: 6 }} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M4 6h16v12H4zM4 6l8 7 8-7" />
                   </svg>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

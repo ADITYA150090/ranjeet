@@ -46,7 +46,7 @@ export default function Notes() {
           </p>
           <div className="pull-quote-meta">
             <span>NOTES · @ranx.ai</span>
-            <span>EST 2020 — 2026</span>
+            <span>2026</span>
           </div>
         </div>
       </section>

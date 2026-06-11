@@ -1,112 +1,128 @@
 .region-dark {
-  position: relative;
-  background: rgb(10,10,12);
-  color: #fff;
-  z-index: 2;
-  isolation: isolate;
-  overflow: hidden;
+    position: relative;
+    background: rgb(10, 10, 12);
+    color: #fff;
+    z-index: 2;
+    isolation: isolate;
+    overflow: hidden;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .region-dark::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(50% 60% at 8% 18%, rgba(255,122,26,0.16), transparent 65%),
-    radial-gradient(45% 55% at 92% 78%, rgba(80,110,200,0.12), transparent 65%),
-    radial-gradient(35% 40% at 50% 95%, rgba(232,85,26,0.08), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.016) 0px, rgba(255,255,255,0.016) 1px, transparent 1px, transparent 7px);
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(50% 60% at 8% 18%, rgba(255, 122, 26, 0.16), transparent 65%), radial-gradient(45% 55% at 92% 78%, rgba(80, 110, 200, 0.12), transparent 65%), radial-gradient(35% 40% at 50% 95%, rgba(232, 85, 26, 0.08), transparent 60%), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.016) 0px, rgba(255, 255, 255, 0.016) 1px, transparent 1px, transparent 7px);
 }
 
-.region-dark > section { position: relative; z-index: 2; }
+.region-dark>section {
+    position: relative;
+    z-index: 2;
+}
 
-.region-dark section { padding: 80px 0; }
+.region-dark section {
+    padding: 80px 0;
+}
 
 .note-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-  margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
-.note-row-right { }
+.note-row-right {}
 
 .note-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 24px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .note-card h3 {
-  font-family: 'Instrument Serif', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: #fff;
-  margin: 0;
-  line-height: 1.2;
+    font-family: 'Instrument Serif', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .note-card p {
-  font-size: 15px;
-  line-height: 1.65;
-  color: rgba(255,255,255,0.72);
-  margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
 }
 
 .region-dark .cta-btn {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
-  color: #fff;
-  backdrop-filter: blur(10px);
-  align-self: flex-start;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    align-self: flex-start;
 }
 
-.region-dark .cta-btn:hover { background: rgba(255,255,255,0.14); }
+.region-dark .cta-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
 
 .note-bigword {
-  font-family: 'Instrument Serif', serif;
-  font-size: clamp(3rem, 6vw, 6rem);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  background: linear-gradient(rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.25) 100%) text;
-  -webkit-text-fill-color: transparent;
-  text-align: right;
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: linear-gradient(rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.25) 100%) text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
 }
 
-.pull-quote-section { padding: 60px 0 80px !important; border-top: 1px solid rgba(255,255,255,0.07); }
+.pull-quote-section {
+    padding: 60px 0 80px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
 
 .pull-quote {
-  font-family: 'Instrument Serif', serif;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.2;
-  color: rgba(255,255,255,0.9);
-  margin: 0 0 24px;
-  max-width: 900px;
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 24px;
+    max-width: 900px;
 }
 
 .pull-quote-meta {
-  display: flex;
-  gap: 32px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+    display: flex;
+    gap: 32px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
-  .note-row { grid-template-columns: 1fr; }
-  .note-bigword { text-align: left; font-size: 3rem; }
-  .note-card { padding: 28px 24px; }
+    .note-row {
+        grid-template-columns: 1fr;
+    }
+    .note-bigword {
+        text-align: left;
+        font-size: 3rem;
+    }
+    .note-card {
+        padding: 28px 24px;
+    }
 }
